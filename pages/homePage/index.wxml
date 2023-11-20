@@ -1,3 +1,10 @@
 <!--pages/homePage/index.wxml-->
-<navigation-bar title="猜猜这是啥" back="{{true}}" color="black" background="#FFF"></navigation-bar>
-<text style="position: fixed; top: 50%; width: 100%; text-align: center;">暂无数据</text>
+<navigation-bar title="单人wq" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<div class="wqContainer">
+  <div class="textContainer">
+    {{text}}
+  </div>
+  <div class="button" bindtap="randomFunc">
+    搞点啥...
+  </div>
+</div>

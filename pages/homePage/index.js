@@ -5,8 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    text: 'wqaaaaa',
+    list: [{
+      id: 0,
+      text: '搞个彩票'
+    }, {
+      id: 1,
+      text: '下把棋'
+    }, {
+      id: 2,
+      text: 'WC??'
+    }]
   },
+
+  randomFunc() {
+    let index = Math.round(Math.random()*2);
+    this.setData({
+      selected: index,
+      text: this.data.list[index].text
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
