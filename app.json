@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/homePage/index",
-    "pages/logs/logs"
+    "pages/muyu/index",
+    "pages/logs/logs",
+    "pages/guaguale/index",
+    "pages/toutiao/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

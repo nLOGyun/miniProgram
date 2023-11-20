@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scratch": "../../components/scratch/scratch",
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}

@@ -8,21 +8,40 @@ Page({
     text: 'wqaaaaa',
     list: [{
       id: 0,
-      text: '搞个彩票'
+      text: '敲敲木鱼？'
     }, {
       id: 1,
-      text: '下把棋'
+      text: '试试运气刮刮乐？'
     }, {
       id: 2,
-      text: 'WC??'
-    }]
+      text: '刷刷头条？'
+    }],
+    selected: null
   },
 
   randomFunc() {
-    let index = Math.round(Math.random()*2);
+    let index = Math.round(Math.random() * 2);
     this.setData({
       selected: index,
       text: this.data.list[index].text
+    })
+  },
+
+  goPage() {
+    let url = '/pages/guaguale/index'
+    switch (this.data.selected) {
+      case 0:
+        url = '/pages/muyu/index'
+        break;
+      case 1:
+        url = '/pages/guaguale/index'
+        break;
+      case 2:
+        url = '/pages/toutiao/index'
+        break;
+    }
+    wx.navigateTo({
+      url
     })
   },
 

@@ -7,4 +7,7 @@
   <div class="button" bindtap="randomFunc">
     搞点啥...
   </div>
+  <div wx:if="{{selected !== null}}" class="textContainer" bind:tap="goPage">
+      Go ->
+  </div>
 </div>

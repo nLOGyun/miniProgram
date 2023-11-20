@@ -14,6 +14,12 @@ const formatNumber = n => {
   return n[1] ? n : `0${n}`
 }
 
+
+const getRandom = (n, m) => {
+  return Math.floor(Math.random() * (m - n + 1) + n)
+}
+
 module.exports = {
-  formatTime
+  formatTime,
+  getRandom
 }
