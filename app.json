@@ -1,11 +1,10 @@
 {
   "pages": [
+    "pages/login/index",
     "pages/index/index",
     "pages/homePage/index",
     "pages/muyu/index",
-    "pages/logs/logs",
-    "pages/guaguale/index",
-    "pages/toutiao/index"
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarTextStyle": "black",

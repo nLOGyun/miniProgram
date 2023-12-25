@@ -1,0 +1,9 @@
+<!--pages/login/index.wxml-->
+<navigation-bar title="登录" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="container">
+  <input class="item" placeholder="请输入用户名" value="{{username}}" bindinput="changeInput" data-key="username"/>
+  <input class="item" placeholder="请输入密码" value="{{password}}" bindinput="changeInput" data-key="password"/>
+  <button class="item" size="default" bind:tap="login"> 登录 </button>
+  <button class="item" size="default"> 注册 </button>
+</view>
+  
